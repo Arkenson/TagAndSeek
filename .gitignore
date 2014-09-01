@@ -2,3 +2,13 @@
 /local.properties
 /.idea/workspace.xml
 .DS_Store
+
+build/*
+build
+
+.gradle
+.idea
+*.ipr
+*.iws
+*.iml
+local.properties
