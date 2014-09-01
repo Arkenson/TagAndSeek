@@ -1,0 +1,169 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:pixlui="http://schemas.android.com/apk/com.neopixl.pixlui"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.myapplication.drawyourcity.app.Instructions"
+    android:background="@drawable/background_greenlist">
+
+    <TextView
+        android:text=""
+        android:layout_width="210dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/instructions_background"
+        android:id="@+id/instructionText"
+        android:layout_marginLeft="100dp"
+        android:padding="5dp"
+        android:visibility="visible"/>
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/launcher"
+        android:id="@+id/harry"
+        android:layout_below="@+id/instructionText"
+        android:visibility="visible"/>
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="25dp"
+        android:text="Show map"
+        android:id="@+id/showMap"
+        android:background="@drawable/instructions_button"
+        android:layout_below="@id/instructionText"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="100dp"
+        android:textColor="#B7D200"
+        android:visibility="visible"
+        android:onClick="ShowMap"
+        />
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="25dp"
+        android:text="Show hint"
+        android:id="@+id/hint"
+        android:background="@drawable/instructions_button"
+        android:layout_below="@+id/instructionText"
+        android:layout_toRightOf="@+id/showMap"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:textColor="#B7D200"
+        android:onClick="getHint"
+        android:visibility="visible"
+        />
+
+
+    <com.neopixl.pixlui.components.button.Button
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:text="I found and want to scan a tag"
+        android:background="@drawable/instructions_button"
+        android:id="@+id/startScan"
+        android:onClick="StartScan"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="63dp"
+        pixlui:typeface="Austie Bost Roman Holiday Sketch.ttf"
+        android:textColor="#B7D200"
+        android:visibility="visible"
+        />
+
+
+    <ImageView
+    android:layout_width="200dp"
+    android:layout_height="300dp"
+    android:src="@drawable/hint_oldman"
+    android:layout_centerInParent="true"
+    android:id="@+id/hint_oldman"
+    android:visibility="gone"/>
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="300dp"
+        android:src="@drawable/hint_girl"
+        android:layout_centerInParent="true"
+        android:id="@+id/hint_girl"
+        android:visibility="gone"/>
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="300dp"
+        android:src="@drawable/hint_guy"
+        android:layout_centerInParent="true"
+        android:id="@+id/hint_guy"
+        android:visibility="gone"/>
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="300dp"
+        android:src="@drawable/hint_dude"
+        android:layout_centerInParent="true"
+        android:id="@+id/hint_dude"
+        android:visibility="gone"/>
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="300dp"
+        android:src="@drawable/hint_chef"
+        android:layout_centerInParent="true"
+        android:id="@+id/hint_chef"
+        android:visibility="gone"/>
+
+    <TextView
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:id="@+id/hintText"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        />
+
+    <com.neopixl.pixlui.components.button.Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Ok, got it!"
+        android:background="@drawable/instructions_button"
+        android:id="@+id/gotItButton"
+        android:onClick="OkGotIt"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="63dp"
+        pixlui:typeface="Austie Bost Roman Holiday Sketch.ttf"
+        android:textColor="#B7D200"
+        android:visibility="gone"
+        />
+
+    <com.neopixl.pixlui.components.textview.TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="12dp"
+        android:textSize="18dp"
+        android:textColor="#1C2D61"
+        android:id="@+id/progress"
+        android:text=" "
+        pixlui:typeface="Austie Bost Roman Holiday Sketch.ttf"
+        />
+
+<FrameLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/mapFrame"
+    android:visibility="gone">
+
+
+    <fragment
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:name="com.google.android.gms.maps.MapFragment"
+        />
+    </FrameLayout>
+
+</RelativeLayout>

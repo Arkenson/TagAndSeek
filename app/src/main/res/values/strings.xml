@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Tag and Seek</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_how_to">How to play</string>
+    <string name="title_activity_get_started">Choose level</string>
+    <string name="title_activity_choose_package">Choose package</string>
+    <string name="title_activity_instructions">Instructions</string>
+    <string name="title_activity_info"> </string>
+    <string name="title_activity_completed_route">Congratulations!</string>
+    <string name="title_activity_loading_screen_start">LoadingScreenStart</string>
+    <string name="title_activity_loading_screen_end">LoadingScreenEnd</string>
+
+</resources>

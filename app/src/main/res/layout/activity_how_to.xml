@@ -1,0 +1,77 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:pixlui="http://schemas.android.com/apk/com.neopixl.pixlui"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.myapplication.drawyourcity.app.HowTo"
+    android:background="@drawable/background_redlist">
+
+    <com.neopixl.pixlui.components.textview.TextView
+        android:id="@+id/howToLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="How to play Tag and Seek"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:textSize="25dp"
+        android:textColor="#1C2D61"
+        pixlui:typeface="Austie Bost Roman Holiday Sketch.ttf"
+
+        />
+
+        <TextView
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:text="Help Harry find his friends who are hiding throughout Tainan City!"
+            android:id="@+id/howToText1"
+            android:layout_marginTop="60dp"
+            android:layout_centerHorizontal="true"/>
+
+
+        <TextView
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:text="Start the game by deciding what kind of a route you are up for (stroll, longer walk or challenge) and the kind of sites you wish to explore. Follow Harry's instructions to find the first site. Once at the site, your task is to find an NFC tag placed on a cardboard replica of Harry's friend. Scanning the NFC tag is required to keep playing the game, as the next step won't be displayed unless you do!"
+            android:id="@+id/howToText2"
+            android:layout_marginTop="15dp"
+            android:layout_below="@+id/howToText1"
+            android:layout_centerHorizontal="true"/>
+
+
+        <TextView
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:text="Remember to enable NFC detection in your settings. Otherwise you won't be able to play the game, which would be a shame!"
+            android:id="@+id/howToText3"
+            android:layout_marginTop="15dp"
+            android:layout_below="@+id/howToText2"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:text="Good luck, and enjoy exploring Tainan City with Harry and Tag and Seek!"
+            android:id="@+id/howToText4"
+            android:layout_marginTop="15dp"
+            android:layout_below="@+id/howToText3"
+            android:layout_centerHorizontal="true"/>
+
+
+    <com.neopixl.pixlui.components.button.Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Ok, got it!"
+        android:onClick="GetStarted"
+        android:id="@+id/getStartedButton"
+        android:layout_marginTop="40dp"
+        android:layout_below="@+id/howToText4"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/rounded_corners"
+        pixlui:typeface="Austie Bost Roman Holiday Sketch.ttf"/>
+
+
+</RelativeLayout>

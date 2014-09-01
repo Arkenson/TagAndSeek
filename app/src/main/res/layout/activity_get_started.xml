@@ -1,0 +1,83 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:pixlui="http://schemas.android.com/apk/com.neopixl.pixlui"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.myapplication.drawyourcity.app.GetStarted"
+    android:background="@drawable/background_redlist">
+
+
+    <com.neopixl.pixlui.components.button.Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Stroll"
+        android:id="@+id/shorts"
+        android:layout_above="@+id/medium"
+        android:layout_centerHorizontal="true"
+        android:onClick="ChoosePackage"
+        android:background="@drawable/rounded_corners"
+        pixlui:typeface="Austie Bost Roman Holiday Sketch.ttf"
+        />
+
+    <TextView
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:text="You will help Harry find a few of his friends, so Harry will need 2-4 hours of your time."
+        android:id="@+id/shortText"
+        android:layout_below="@+id/shorts"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="3dp"
+        />
+
+    <com.neopixl.pixlui.components.button.Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Longer walk"
+        android:id="@+id/medium"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:onClick="ChoosePackage"
+        android:background="@drawable/rounded_corners"
+        pixlui:typeface="Austie Bost Roman Holiday Sketch.ttf"
+       />
+
+    <TextView
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:text="This game is a little bit more difficult - it might take you half a day to complete it!"
+
+        android:id="@+id/mediumText"
+        android:layout_below="@+id/medium"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="3dp"
+        />
+
+    <com.neopixl.pixlui.components.button.Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Challenge"
+        android:id="@+id/longs"
+        android:layout_marginTop="70dp"
+        android:layout_below="@+id/medium"
+        android:layout_centerHorizontal="true"
+        android:onClick="ChoosePackage"
+        android:background="@drawable/rounded_corners"
+        pixlui:typeface="Austie Bost Roman Holiday Sketch.ttf"
+        />
+
+    <TextView
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:text="Harry needs your help to find many friends! This game needs an entire day to be completed."
+        android:id="@+id/longText"
+        android:layout_below="@+id/longs"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="3dp"
+        />
+
+</RelativeLayout>
