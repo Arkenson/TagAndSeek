@@ -164,12 +164,13 @@ public class Instructions extends ActionBarActivity {
                     for (ParseObject fetchHint : parseObjects) {
                         hint = fetchHint.getString("hint");
                         picturename = fetchHint.getString("picturename");
-                        siteGeoLoc = fetchHint.getParseGeoPoint("geolocation");
+                        siteGeoLoc = fetchHint.getParseGeoPoint("mapgeolocation");
 
                         Log.d("hint", hint);
 
                         //Initialize map when location is found.
                         InitializeMap();
+
                     }
                 } else {
                     Log.d("score", "Error: " + e.getMessage());
